@@ -2,7 +2,7 @@
 
 int main() {
   using namespace http;
-  TcpServer server = TcpServer();
-  m_socket = socket(AF_INET, SOCK_STREAM, 0);
+
+  TcpServer server = TcpServer("0.0.0.0", MYPORT);
   return 0;
 }
